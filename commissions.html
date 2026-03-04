@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Commissions</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="home.html">Portfolio</a>
+			<nav class="nav" id="main-nav">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="commissions.html">Commissions</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<h1>Commissions</h1>
+		<p>To request a commission, provide a description, preferred size, and budget. Contact details can go here.</p>
+
+		<h2>Recent Commission Previews</h2>
+		<div class="gallery-grid" id="commissions-preview">
+			<img src="comm1.png" data-large="comm1.png" alt="comm1">
+			<img src="comm2.png" data-large="comm2.png" alt="comm2">
+			<img src="comm3.png" data-large="comm3.png" alt="comm3">
+			<img src="comm4.png" data-large="comm4.png" alt="comm4">
+			<img src="comm5.png" data-large="comm5.png" alt="comm5">
+			<img src="comm6.png" data-large="comm6.png" alt="comm6">
+			<img src="comm7.png" data-large="comm7.png" alt="comm7">
+		</div>
+
+		<div class="modal" id="modal">
+			<button class="modal-close" id="modalClose">✕</button>
+			<button class="modal-prev" id="modalPrev">‹</button>
+			<img class="modal-img" id="modalImg" src="" alt="Preview">
+			<button class="modal-next" id="modalNext">›</button>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">© Minh-Hieu La</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
