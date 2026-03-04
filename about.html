@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>About</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="home.html">Portfolio</a>
+			<nav class="nav" id="main-nav">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="commissions.html">Commissions</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<h1>About</h1>
+		<p>hello, i'm a someone </p>
+
+		<div style="display:flex;gap:1rem;align-items:center;margin-top:1rem;flex-wrap:wrap;">
+			<img src="portrait.png" data-large="portrait.png" alt="portrait" style="width:160px;height:160px;object-fit:cover;border-radius:999px;box-shadow:0 12px 30px rgba(2,6,23,0.6);cursor:pointer">
+			<div>
+				<strong>Minh-Hieu La</strong>
+				<p class="muted">i'm in a digital media honors class, and i also do semi-free commissions as of batch 1 (my comms are close)</p>
+			</div>
+		</div>
+
+		<!-- Online article -->
+		<article class="online-personas" style="margin-top:1rem;display:flex;gap:1rem;align-items:flex-start;flex-wrap:wrap;">
+			<img src="key.png" alt="Online Personas" data-large="key.png" style="width:220px;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 12px 30px rgba(2,6,23,0.6);cursor:pointer">
+			<div style="max-width:720px;">
+				<h2>Online Appearances</h2>
+				<p class="muted">This is a visual representation of the different appearances I use online. (Click the image to preview it larger)</p>
+				<ul class="muted">
+					<li><strong>Key</strong> — general appearance</li>
+					<li><strong>Keyclair</strong> — carmencord or anything PM related</li>
+					<li><strong></strong>i appear in a variety of communities, such as Combination Creations (senior moderator), Carmencord, Desert Bus and PMCH</li>
+                    <li><strong></strong>i use discord, insta (n0tcutekeys), twitter (moving to bsky), and tiktok (notcutekeys)</li>
+				</ul>
+			</div>
+		</article>
+
+		<div class="modal" id="modal">
+			<button class="modal-close" id="modalClose">✕</button>
+			<button class="modal-prev" id="modalPrev">‹</button>
+			<img class="modal-img" id="modalImg" src="" alt="Preview">
+			<button class="modal-next" id="modalNext">›</button>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">© Minh-Hieu La</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
