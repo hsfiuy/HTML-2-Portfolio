@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="home.html">Portfolio</a>
+			<nav class="nav" id="main-nav">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="commissions.html">Commissions</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="slideshow" id="slideshow">
+			<div class="slide active">
+				<img src="home1.png" alt="Slide 1">
+				<div class="slide-caption">Featured Work — Home 1</div>
+			</div>
+			<div class="slide">
+				<img src="home2.png" alt="Slide 2">
+				<div class="slide-caption">Featured Work — Home 2</div>
+			</div>
+			<div class="slide">
+				<img src="home3.png" alt="Slide 3">
+				<div class="slide-caption">Featured Work — Home 3</div>
+			</div>
+			<div class="slide">
+				<img src="home4.png" alt="Slide 4">
+				<div class="slide-caption">Featured Work — Home 4</div>
+			</div>
+			<button class="slide-btn prev" data-action="prev">‹</button>
+			<button class="slide-btn next" data-action="next">›</button>
+			<div class="dots" id="dots"></div>
+		</section>
+
+		<section class="container intro">
+			<h1>Welcome</h1>
+			<p>Explore my work: commissions, gallery previews, and more.</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">© Minh-Hieu La</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

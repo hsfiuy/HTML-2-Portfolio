@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Gallery</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="home.html">Portfolio</a>
+			<nav class="nav" id="main-nav">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="commissions.html">Commissions</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<h1>Gallery Preview</h1>
+		<p class="muted">Click a thumbnail to preview.</p>
+		<div class="gallery-grid" id="gallery">
+			<!-- design thumbnails (local files) -->
+			<img src="design1.png" data-large="design1.png" alt="design1">
+			<img src="design2.png" data-large="design2.png" alt="design2">
+			<img src="design3.png" data-large="design3.png" alt="design3">
+			<img src="design4.png" data-large="design4.png" alt="design4">
+			<img src="design5.png" data-large="design5.png" alt="design5">
+			<img src="design6.png" data-large="design6.png" alt="design6">
+		</div>
+
+		<!-- Featured video -->
+		<section class="container featured-media">
+			<h2>Featured Video</h2>
+			<div class="video-wrap">
+				<video controls class="featured-video">
+					<source src="classproject.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<p class="muted">A short project highlight — click play to view.</p>
+			</div>
+		</section>
+
+		<div class="modal" id="modal">
+			<button class="modal-close" id="modalClose">✕</button>
+			<button class="modal-prev" id="modalPrev">‹</button>
+			<img class="modal-img" id="modalImg" src="" alt="Preview">
+			<button class="modal-next" id="modalNext">›</button>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">© Minh-Hieu La</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
